@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+<body>
+<script>
+
+var word = prompt("Word please.");
+
+function pluralize(word) {
+	if(word == "automaton") {
+		word = "Automata"
+		return word;
+	}
+
+	if(word == "mouse") {
+		word = "Mice"
+		return word;
+	}
+
+	if (word == "moose") {
+		return word;
+	}
+
+	return word + "s";
+}
+
+console.log(pluralize(word));
+
+</script>
+</body>
+</html>
