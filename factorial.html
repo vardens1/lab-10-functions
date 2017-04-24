@@ -3,17 +3,18 @@
 <body>
 <script>
 
-var n = parseInt(prompt("Number please.")); 
-var factor = n
-
-function factorial(n) { //4 = n
-	for (var i = 1; i < n; i = i + 1) {
-		factor = factor * i
+function factorial(n){
+	var factor = 1;	
+	for (var i = 1; i <= n; i = i + 1) {
+		factor = factor * i;
+		console.log(factor);
 	}
 	return factor;
 }
 
-console.log(factorial(n));
+var input = parseInt(prompt("Number please.")); 
+
+console.log(factorial(input));
 
 </script>
 </body>
